@@ -1,0 +1,277 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	word-break: keep-all;
+	font-family: helvetica, sans-serif;
+}
+
+body { 
+	-ms-overflow-style: none; 
+} 
+
+body::-webkit-scrollbar { 
+	display: none; 
+} 
+
+.vw {
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+}
+
+.home a {
+	writing-mode: vertical-rl;
+	letter-spacing: 20px;
+}
+
+h1, 
+h2, 
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* ------------------ 홈 ------------------ */
+
+.home section {
+	width: calc(100% / 3);
+	height: 50svh;
+}
+
+.home section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.brown {
+	background-color: #3b2726;
+	color: white;
+}
+
+.warmgray {
+	background-color: #aaa0a2;
+	color: white;
+}
+
+.black {
+	background-color: #000000;
+	color: white;
+}
+
+.blue {
+	background-color: #b0bbc9;
+	color: white;
+}
+
+.coolgray {
+	background-color: #807f89;
+	color: white;
+}
+
+.lightyellow {
+	background-color: #f9f2e6;
+	color: black;
+}
+
+.lightyellow a {
+	color: black;
+}
+
+/* ------------------ 소개 ------------------ */
+
+.intro h2,
+.intro section,
+.intro article {
+	color: black;
+}
+
+.intro .kr p {
+	line-height: 1.5;
+}
+
+.intro .kr {
+	position: fixed;
+/*	border: 1px solid red;*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	writing-mode: vertical-rl;
+	overflow: auto;
+	padding: 5px;
+}
+
+.intro .kr::-webkit-scrollbar-thumb {
+	background-color: blue;
+}
+
+.intro .kr ul {
+	padding-top: 18px;
+}
+
+.intro .kr li {
+	padding: 0 1px 0 1px;
+}
+
+.intro .kr article {
+	margin-right: 16px;
+}
+
+.intro .kr .text {
+	position: fixed;
+	right: 0;
+	height: 50%;
+}
+.intro .kr h2,
+.intro .kr h3 {
+	text-orientation: upright;
+	padding-top: 18px;
+}
+
+.kr article:nth-child(2) { 
+	padding-right: 140px;
+}
+
+
+.intro .en {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+/*	border: 1px solid blue;*/
+	overflow: auto;
+	padding: 5px;
+	overflow-y: visible;
+}
+
+.en article:nth-child(2) { 
+	padding-top: 140px;
+}
+
+.intro .en ul {
+	padding-left: 18px;
+}
+
+.intro .en article {
+	margin-top: 16px;
+}
+
+.intro .en h2,
+.intro .en h3 {
+	padding-left: 18px;
+}
+
+.intro .en h3 {
+	margin-top: 16px;
+}
+
+.intro .en .text {
+	position: fixed;
+}
+
+/* ------------------ 웹사이트 ------------------ */
+
+.website {
+	padding: 10px;
+}
+
+.website h1 {
+	position: fixed;
+	right: 10px;
+}
+.website figure {
+	margin-bottom: 40px;
+}
+.website img {
+	width: 150px;
+	height: auto;
+}
+
+figure {
+	display: inline-flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	margin-right: 24px;
+}
+
+figcaption {
+	writing-mode: vertical-rl;
+	margin-right: 4px;
+}
+
+/* ------------------ 토크 ------------------ */
+
+.talk section {
+	display: flex;
+}
+
+.talk article {
+	border: 1px solid white;
+	height: 100vh;
+	width: 200px;
+}
+
+/* ------------------ 토크 ------------------ */
+
+.text li {
+	list-style: none;
+}
+
+.text .long {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+.text .long li {
+	border-top: 1px solid white;
+}
+
+.text .short {
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+}
+
+.text .short ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.text .short li {
+	width: 300px;
+	height: 300px;
+	border: 1px solid white;
+	padding: 10px;
+	margin: 10px;
+	overflow: auto;
+}
+
+@media screen and (max-width: 900px) {
+
+	.home section {
+		width: 50%;
+		height: calc(100svh / 3 );
+	}
+
+}
