@@ -332,11 +332,12 @@ figcaption {
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .intro .kr .text {
-  font-size: 35px;
+  font-size: 32px;
+  letter-spacing: 2px;
 }
 
 .intro .kr article {
