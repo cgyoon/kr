@@ -369,6 +369,7 @@ figcaption {
 .writing .dot {
 	margin: -4px -4px;
 }
+
 .writing .en {
 	position: fixed;
 	top: 80svh;
@@ -444,6 +445,15 @@ figcaption {
 	.writing .kr .title {
 	  font-family: "Noto Serif KR", serif;
 	  color: red;
+	  letter-spacing: 1px;
 	}
-	
+
+	.writing .date {
+		font-family: Times New Roman, serif;
+		writing-mode: horizontal-tb;
+	}
+
+	.writing .dot {
+		margin: 0 0;
+	}
 }
