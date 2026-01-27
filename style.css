@@ -318,8 +318,8 @@ figcaption {
 
 .mo {
 	position: relative;
-	top: 0px;
-	right: -5px;
+	top: -3px;
+	right: -2px;
 	margin-top: 2px;
 	margin-bottom: -22px;
 }
@@ -338,6 +338,11 @@ figcaption {
 .intro .kr .text {
   font-size: 32px;
   letter-spacing: 2px;
+  padding-top: 0;
+}
+
+.intro .kr p {
+   line-height: 1.45;
 }
 
 .intro .kr article {
