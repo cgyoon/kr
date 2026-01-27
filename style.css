@@ -451,6 +451,8 @@ figcaption {
 	.writing .date {
 		font-family: Times New Roman, serif;
 		writing-mode: horizontal-tb;
+		padding-bottom: 7px;
+		padding-right: 8px;
 	}
 
 	.writing .dot {
