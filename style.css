@@ -94,6 +94,10 @@ body {
 	color: black;
 }
 
+.warmgray a {
+	color: black;
+}
+
 .lightyellow a {
 	color: black;
 }
@@ -263,16 +267,14 @@ figcaption {
 /* ------------------ 대화 ------------------ */
 
 .talk {
-	padding: 20px;
+	writing-mode: vertical-rl;
+	padding: 10px;
+	color: black;
 }
 
 .talk h1 {
 	position: absolute;
-	top: 30px;
-}
-
-.talk {
-	writing-mode: vertical-rl;
+	top: 42px;
 }
 
 .talk section {
@@ -283,29 +285,43 @@ figcaption {
 }
 
 .talk article {
-	height: 98svh;
-	display: flex;
-	border-right: 1px solid white;
+	display: inline-flex;
+	border-right: 2px solid black;
 	margin-left: 32px;
+	padding-right: 6px;
 }
 
 .talk .kr {
+	height: 75%;
 	font-size: 32px;
-	border: 1px solid red;
-	width: auto;
+	padding-bottom: 16px;
+}
+
+.talk .kr h2 {
+	margin-top: 32px;
+	margin-left: 16px;
 }
 
 .talk .kr p {
-	line-height: 1.4;
+	text-indent: 28px;
 }
 
+.talk .kr cite {
+	margin-bottom: 6px;
+}
 .talk .en {
-	font-family: helvetica, sans-serif;
-	font-size: 16px;
-	border: 1px solid blue;
-	transform-origin: 0 0;
-	transform: rotate(-90deg);
-	bottom: 0;
+	height: 25%;
+}
+
+.talk .en h2 {
+	margin-left: 28px;
+}
+
+.talk .kr p {
+	line-height: 1.5;
+}
+.ur {
+	text-orientation: upright;
 }
 
 /* ------------------ 글 ------------------ */
@@ -441,10 +457,16 @@ figcaption {
 		width: 40%;
 	}
 
+	/* ------------------ 대화 ------------------ */
+
+	.talk .kr p {
+	  font-family: "Noto Serif KR", serif;
+	  letter-spacing: 1px;
+	}
+
 	/* ------------------ 쓰기 ------------------ */
 	.writing .kr .title {
 	  font-family: "Noto Serif KR", serif;
-	  color: red;
 	  letter-spacing: 1px;
 	}
 
