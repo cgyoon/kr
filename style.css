@@ -309,8 +309,10 @@ figcaption {
 .talk .kr cite {
 	margin-bottom: 6px;
 }
+
 .talk .en {
 	height: 25%;
+	font-family: helvetica, sans-serif;
 }
 
 .talk .en h2 {
@@ -464,6 +466,10 @@ figcaption {
 	  letter-spacing: 1px;
 	}
 
+	.ur {
+		margin-bottom: 16px;
+	}
+	
 	/* ------------------ 쓰기 ------------------ */
 	.writing .kr .title {
 	  font-family: "Noto Serif KR", serif;
