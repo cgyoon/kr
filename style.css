@@ -331,6 +331,20 @@ figcaption {
   font-family: "Noto Serif KR", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+.intro .kr article {
+	margin-left: 16px;
+}
+
+.intro .kr h3 {
+	margin-left: 0;
+}
+
+.intro .kr li {
+	padding: 0 2px 0 2px;
 }
 
 .intro .en {
