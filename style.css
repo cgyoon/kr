@@ -5,13 +5,13 @@
 	word-break: keep-all;
 }
 
-body { 
+/*body { 
 	-ms-overflow-style: none; 
 } 
 
 body::-webkit-scrollbar { 
 	display: none; 
-} 
+} */
 
 .vw {
 	writing-mode: vertical-rl;
@@ -30,16 +30,16 @@ h3 {
 	font-weight: normal;
 }
 
-a {
+.home a {
 	color: white;
 	text-decoration: none;
 }
 
-a:hover {
+/*a:hover {
 	text-decoration: underline;
 	text-underline-offset: 3px;
 }
-
+*/
 body {
 	display: flex;
 	flex-wrap: wrap;
@@ -81,7 +81,7 @@ body {
 
 .blue {
 	background-color: #b0bbc9;
-	color: white;
+	color: black;
 }
 
 .coolgray {
@@ -95,6 +95,10 @@ body {
 }
 
 .lightyellow a {
+	color: black;
+}
+
+.blue a {
 	color: black;
 }
 
@@ -256,55 +260,131 @@ figcaption {
 	margin-right: 4px;
 }
 
-/* ------------------ 토크 ------------------ */
+/* ------------------ 대화 ------------------ */
+
+.talk {
+	padding: 20px;
+}
+
+.talk h1 {
+	position: absolute;
+	top: 30px;
+}
+
+.talk {
+	writing-mode: vertical-rl;
+}
 
 .talk section {
 	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding-right: 40px;
 }
 
 .talk article {
-	border: 1px solid white;
-	height: 100vh;
-	width: 200px;
+	height: 98svh;
+	display: flex;
+	border-right: 1px solid white;
+	margin-left: 32px;
 }
 
-/* ------------------ 토크 ------------------ */
+.talk .kr {
+	font-size: 32px;
+	border: 1px solid red;
+	width: auto;
+}
 
-.text li {
+.talk .kr p {
+	line-height: 1.4;
+}
+
+.talk .en {
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	border: 1px solid blue;
+	transform-origin: 0 0;
+	transform: rotate(-90deg);
+	bottom: 0;
+}
+
+/* ------------------ 글 ------------------ */
+
+.writing {
+	writing-mode: vertical-rl;
+	color: black;
+}
+
+.writing a {
+	color: black;
+	text-decoration: none;
+}
+
+.writing h1 {
+	position: fixed;
+	top: 42px;
+	right: 10px;
+}
+
+.writing li {
 	list-style: none;
 }
 
-.text .long {
+.writing .kr {
 	position: absolute;
-	width: 50%;
-	height: 100%;
+	top: 0;
+	right: 0;
+	height: 80svh;
+	font-size: 32px;
+	overflow-x: auto;
+	padding: 10px 40px 10px 10px;
 }
 
-.text .long li {
-	border-top: 1px solid white;
+.writing .kr li {
+	border-right: 2px solid black;
+	padding-right: 4px;
+	margin-left: 16px;
+	display: flex;
+	align-items: center;
 }
 
-.text .short {
+.writing .kr a:hover,
+.writing .en a:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.writing .title {
+	height: calc(100% - 110px);
+}
+
+.writing .date {
 	position: absolute;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-	border: 1px solid white;
-	display: flex;
-	justify-content: center;
+	bottom: 0;
+	font-size: 12px;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
 }
 
-.text .short ul {
-	display: flex;
-	flex-wrap: wrap;
+.writing .dot {
+	margin: -4px -4px;
 }
-.text .short li {
-	width: 300px;
-	height: 300px;
-	border: 1px solid white;
+.writing .en {
+	position: fixed;
+	top: 80svh;
+	width: 100%;
+	height: 20svh;
+	writing-mode: horizontal-tb;
 	padding: 10px;
-	margin: 10px;
-	overflow: auto;
+	font-family: helvetica, sans-serif;
+	overflow-y: auto;
+}
+
+.writing .en li {
+	border-top: 2px solid black;
+	padding-top: 4px;
+	margin-bottom: 4px;
+	text-align: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -314,50 +394,56 @@ figcaption {
 		height: calc(100svh / 3 );
 	}
 
-/* ------------------ 소개 ------------------ */
+	/* ------------------ 소개 ------------------ */
 
-.mo {
-	position: relative;
-	top: -3px;
-	right: -4px;
-	margin-top: 2px;
-	margin-bottom: -22px;
-}
+	.mo {
+		position: relative;
+		top: -3px;
+		right: -4px;
+		margin-top: 2px;
+		margin-bottom: -22px;
+	}
 
-.intro .kr {
-	top: 0;
-	left: 40%;
-	width: 60%;
-  font-family: "Noto Serif KR", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 22px;
-  letter-spacing: 1px;
-}
+	.intro .kr {
+		top: 0;
+		left: 40%;
+		width: 60%;
+	  font-family: "Noto Serif KR", serif;
+	  font-weight: 400;
+	  font-style: normal;
+	  font-size: 22px;
+	  letter-spacing: 1px;
+	}
 
-.intro .kr .text {
-  font-size: 30px;
-  letter-spacing: 2px;
-}
+	.intro .kr .text {
+	  font-size: 30px;
+	  letter-spacing: 2px;
+	}
 
-.intro .kr p {
-   line-height: 1.45;
-}
+	.intro .kr p {
+	   line-height: 1.45;
+	}
 
-.intro .kr article {
-	margin-left: 16px;
-}
+	.intro .kr article {
+		margin-left: 16px;
+	}
 
-.intro .kr h3 {
-	margin-left: 0;
-}
+	.intro .kr h3 {
+		margin-left: 0;
+	}
 
-.intro .kr li {
-	padding: 0 2px 0 2px;
-}
+	.intro .kr li {
+		padding: 0 2px 0 2px;
+	}
 
-.intro .en {
-	width: 40%;
-}
+	.intro .en {
+		width: 40%;
+	}
 
+	/* ------------------ 쓰기 ------------------ */
+	.writing .kr .title {
+	  font-family: "Noto Serif KR", serif;
+	  color: red;
+	}
+	
 }
