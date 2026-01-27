@@ -326,8 +326,8 @@ figcaption {
 
 .intro .kr {
 	top: 0;
-	left: 35%;
-	width: 65%;
+	left: 40%;
+	width: 60%;
   font-family: "Noto Serif KR", serif;
   font-weight: 400;
   font-style: normal;
@@ -336,7 +336,7 @@ figcaption {
 }
 
 .intro .kr .text {
-  font-size: 32px;
+  font-size: 30px;
   letter-spacing: 2px;
 }
 
@@ -357,7 +357,7 @@ figcaption {
 }
 
 .intro .en {
-	width: 35%;
+	width: 40%;
 }
 
 }
