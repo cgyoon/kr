@@ -236,34 +236,213 @@ h3 {
 	padding-left: 18px;
 }
 
+/* ------------------ 예술 ------------------ */
+
+.art {
+	writing-mode: vertical-rl;
+	overflow-y: hidden;
+	padding: 10px;
+	padding-right: 30px;
+}
+
+.art h1 {
+	position: fixed;
+	top: 42px;
+	right: 10px;
+}
+
+.art h2 {
+	position: relative;
+	right: 90px;
+}
+
+.art article{
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+}
+
+.art .capt {
+	position: relative;
+	right: 100px;
+	margin-top: 42px;
+}
+
+.art figure {
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: row;
+	writing-mode: vertical-lr;
+}
+
+.art img {
+	height: calc(100% - 40px);
+	margin-bottom: 20px;
+	padding-right: 120px;
+}
+
+.art .desc {
+	display: flex;
+	margin-right: 20px;
+}
+
+.art .desc .kr {
+	line-height: 1.4;
+}
+
+.art figure::-webkit-scrollbar {
+    width: 1px;
+}
+.art figure::-webkit-scrollbar-track {
+    background-color: black;
+}
+.art figure::-webkit-scrollbar-thumb { 
+    background-color: rgba(255, 255, 255, 0.5)
+}
+.art figure::-webkit-scrollbar-button {
+    display: none;
+}
+
+.art .mo {
+		position: relative;
+		top: -7px;
+		right: -11px;
+		margin-top: 2px;
+		margin-bottom: -22px;
+	}
+}
+
 /* ------------------ 웹사이트 ------------------ */
 
 .website {
-	padding: 10px;
+	writing-mode: vertical-rl;
+	overflow-y: hidden;
 }
 
 .website h1 {
 	position: fixed;
-	right: 10px;
-}
-.website figure {
-	margin-bottom: 40px;
-}
-.website img {
-	width: 150px;
-	height: auto;
+	top: 42px;
+	right: 0;
 }
 
-figure {
-	display: inline-flex;
-	flex-direction: row-reverse;
-	align-items: flex-start;
-	margin-right: 24px;
+.website li a {
+	color: white;
+	text-decoration: none;
 }
 
-figcaption {
+.website .kr,
+.website .en {
+	position: fixed;
+}
+
+.website .screen {
+	position: absolute;
 	writing-mode: vertical-rl;
-	margin-right: 4px;
+}
+
+.website .kr,
+.website .screen,
+.website .en {
+	width: 100%;
+	left: 0;
+}
+
+.website .kr {
+	top: 0;
+	height: 20%;
+	writing-mode: vertical-rl;
+}
+
+.website .screen {
+	top: 20%;
+	height: 65%;
+	overflow: auto;
+	padding-bottom: 16px;
+}
+
+.website .en {
+	top: 85%;
+	height: 15%;
+	display: flex;
+	align-items: center;
+}
+
+.screen ul {
+	display: flex;
+}
+
+.screen img {
+	width: auto;
+	height: 100%;
+}
+
+.website .kr ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	line-height: 1.5;
+	padding: 10px;
+}
+
+.website .kr li {
+	text-decoration: underline;
+}
+
+.website .screen ul {
+	display: flex;
+	flex-direction: column;
+	padding-right: 10px;
+}
+
+.website .screen li {
+	margin-left: 40px;
+}
+
+.website .screen figcaption {
+	font-size: 12px;
+	padding-right: 6px;
+}
+
+.website .en ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px;
+}
+
+.website .en li {
+/*	letter-spacing: 0.5px;*/
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.website .kr li,
+.website .screen li,
+.website .en li {
+	list-style: none;
+}
+
+.website .kr li:hover ,
+.website figcaption:hover,
+.website .en li:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.website .screen::-webkit-scrollbar {
+    width: 1px;
+    height: 10px;
+}
+.website .screen::-webkit-scrollbar-track {
+    background-color: #3b2726;
+}
+.website .screen::-webkit-scrollbar-thumb { 
+    background-color: rgba(255, 255, 255, 0.25)
+}
+.website .screen::-webkit-scrollbar-button {
+    display: none;
 }
 
 /* ------------------ 대화 ------------------ */
@@ -410,7 +589,7 @@ figcaption {
 
 @media screen and (max-width: 900px) {
 
-	/* ------------------ 홈 ------------------ */
+	/* ------------------ 홈 모바일 ------------------ */
 
 	.home section {
 		width: 50%;
@@ -421,7 +600,7 @@ figcaption {
 	  font-family: "Noto Serif KR", serif;
 	}
 
-	/* ------------------ 소개 ------------------ */
+	/* ------------------ 소개 모바일 ------------------ */
 
 	.mo {
 		position: relative;
@@ -467,7 +646,79 @@ figcaption {
 		width: 40%;
 	}
 
-	/* ------------------ 대화 ------------------ */
+	/* ------------------ 예술 모바일 ------------------ */
+
+	.art {
+		overflow-y: auto;
+		padding-right: 0;
+	}
+
+	.art h2 {
+		right: 0px;
+	}
+
+	.art .capt {
+		position: relative;
+		right: 0;
+		margin-top: 3px;
+		font-size: 12px;
+	}
+
+	.art article {
+		writing-mode: horizontal-tb;
+		margin-left: 20px;
+		border: 3px solid yellow;
+		width: 100%;
+		height: 100%;
+	}
+
+	.art figure {
+		position: relative;
+		width: 100%;
+		height: auto;
+		border: 4px solid blue;
+	}
+
+	.art img {
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding-right: 0px;
+	}
+
+	.art .desc {
+		flex-direction: column;
+		border: 1px solid red;
+	}
+
+	.art .kr {
+		writing-mode: vertical-rl;
+		height: 50%;
+	}
+
+	/* ------------------ 웹사이트 모바일 ------------------ */
+
+	.website .kr {
+		height: 25%;
+		overflow-x: auto;
+	}
+
+	.website .screen {
+		top: 25%;
+		height: 55%;
+	}
+
+	.website .en {
+		top: 80%;
+		height: 20%;
+		overflow-y: auto;
+	}
+
+	.website .kr ul {
+		justify-content: flex-start;
+	}
+
+	/* ------------------ 대화 모바일 ------------------ */
 
 	.talk .kr p {
 	  font-family: "Noto Serif KR", serif;
@@ -478,7 +729,7 @@ figcaption {
 		margin-bottom: 16px;
 	}
 	
-	/* ------------------ 쓰기 ------------------ */
+	/* ------------------ 쓰기 모바일 ------------------ */
 	.writing .kr .title {
 	  font-family: "Noto Serif KR", serif;
 	  letter-spacing: 1px;
