@@ -361,13 +361,6 @@ h3 {
 	padding-bottom: 16px;
 }
 
-.website .en {
-	top: 85%;
-	height: 15%;
-	display: flex;
-	align-items: center;
-}
-
 .screen ul {
 	display: flex;
 }
@@ -375,6 +368,19 @@ h3 {
 .screen img {
 	width: auto;
 	height: 100%;
+}
+
+.website .kr li,
+.website .screen li,
+.website .en li {
+	list-style: none;
+}
+
+.website .kr li:hover ,
+.website figcaption:hover,
+.website .en li:hover {
+	opacity: 0.5;
+	cursor: pointer;
 }
 
 .website .kr ul {
@@ -403,33 +409,7 @@ h3 {
 .website .screen figcaption {
 	font-size: 12px;
 	padding-right: 6px;
-}
-
-.website .en ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 10px;
-}
-
-.website .en li {
-/*	letter-spacing: 0.5px;*/
-	margin-right: 5px;
-	margin-left: 5px;
 	font-family: helvetica, sans-serif;
-}
-
-.website .kr li,
-.website .screen li,
-.website .en li {
-	list-style: none;
-}
-
-.website .kr li:hover ,
-.website figcaption:hover,
-.website .en li:hover {
-	opacity: 0.5;
-	cursor: pointer;
 }
 
 .website .screen::-webkit-scrollbar {
@@ -444,6 +424,27 @@ h3 {
 }
 .website .screen::-webkit-scrollbar-button {
     display: none;
+}
+
+.website .en {
+	top: 85%;
+	height: 15%;
+	display: flex;
+	align-items: center;
+}
+
+.website .en ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px;
+}
+
+.website .en li {
+/*	letter-spacing: 0.5px;*/
+	margin-right: 5px;
+	margin-left: 5px;
+	font-family: helvetica, sans-serif;
 }
 
 /* ------------------ 대화 ------------------ */
@@ -715,17 +716,21 @@ h3 {
 		overflow-y: auto;
 	}
 
+	.website .en {
+		align-items: flex-start;
+	}
+
 	.website .kr ul {
 		justify-content: flex-start;
-	  font-family: "Noto Serif KR", serif;
-	  letter-spacing: 1px;
+	  	font-family: "Noto Serif KR", serif;
+	  	letter-spacing: 1px;
 	}
 
 	/* ------------------ 대화 모바일 ------------------ */
 
 	.talk .kr p {
-	  font-family: "Noto Serif KR", serif;
-	  letter-spacing: 1px;
+	  	font-family: "Noto Serif KR", serif;
+	  	letter-spacing: 1px;
 	}
 
 	.ur {
@@ -734,8 +739,8 @@ h3 {
 	
 	/* ------------------ 쓰기 모바일 ------------------ */
 	.writing .kr .title {
-	  font-family: "Noto Serif KR", serif;
-	  letter-spacing: 1px;
+	  	font-family: "Noto Serif KR", serif;
+	  	letter-spacing: 1px;
 	}
 
 	.writing .date {
