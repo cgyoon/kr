@@ -416,6 +416,7 @@ h3 {
 /*	letter-spacing: 0.5px;*/
 	margin-right: 5px;
 	margin-left: 5px;
+	font-family: helvetica, sans-serif;
 }
 
 .website .kr li,
@@ -716,6 +717,8 @@ h3 {
 
 	.website .kr ul {
 		justify-content: flex-start;
+	  font-family: "Noto Serif KR", serif;
+	  letter-spacing: 1px;
 	}
 
 	/* ------------------ 대화 모바일 ------------------ */
