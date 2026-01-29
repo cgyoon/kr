@@ -33,7 +33,6 @@ h3 {
 	position: relative;
 	width: calc(100% / 3);
 	height: 50svh;
-
 }
 
 .home a {
@@ -593,14 +592,26 @@ h3 {
 
 	/* ------------------ 홈 모바일 ------------------ */
 
+	.home {
+		writing-mode: vertical-rl;
+	}
+
 	.home section {
-		width: 50%;
+		width: 50vw;
 		height: calc(100svh / 3 );
 	}
 
 	.home a {
 	  font-family: "Noto Serif KR", serif;
 	}
+
+	.home { 
+		-ms-overflow-style: none; 
+	} 
+
+	.home::-webkit-scrollbar { 
+		display: none; 
+	} 
 
 	/* ------------------ 소개 모바일 ------------------ */
 
