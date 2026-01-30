@@ -675,10 +675,12 @@ h3 {
 	/* ------------------ 예술 모바일 ------------------ */
 
 	.art figure {
+		position: relative;
 /*		border: 1px solid red;*/
 		width: 80vw;
 		display: inline-block;
 		white-space: nowrap;
+		overflow-y: scroll;
 	}
 
 	.art img {
@@ -705,10 +707,10 @@ h3 {
 	}
 
 	.art .capt .mo {
-			top: -6px;
-			right: -12px;
-			margin-top: 2px;
-			margin-bottom: -16px;
+		top: -6px;
+		right: -12px;
+		margin-top: 2px;
+		margin-bottom: -16px;
 	}
 /*
 	.art article {
