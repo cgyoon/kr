@@ -765,3 +765,16 @@ h3 {
 		margin: 0 0;
 	}
 }
+
+
+@media screen and (min-aspect-ratio: 6/1) {
+
+	.home {
+		flex-wrap: nowrap;
+		justify-content: stretch;
+	}
+
+	.home section {
+		height: 100svh;
+	}
+}
