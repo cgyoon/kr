@@ -241,7 +241,7 @@ h3 {
 	writing-mode: vertical-rl;
 	overflow-y: hidden;
 	padding: 10px;
-	padding-right: 30px;
+	padding-right: 15px;
 }
 
 .art h1 {
@@ -250,9 +250,14 @@ h3 {
 	right: 10px;
 }
 
+.art header {
+	display: flex;
+}
+
 .art h2 {
 	position: relative;
-	right: 90px;
+	font-size: 32px;
+	margin-bottom: 14px;
 }
 
 .art article{
@@ -263,8 +268,6 @@ h3 {
 
 .art .capt {
 	position: relative;
-	right: 100px;
-	margin-top: 42px;
 }
 
 .art figure {
@@ -273,12 +276,12 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	writing-mode: vertical-lr;
+	margin-right: 16px;
 }
 
 .art img {
 	height: calc(100% - 40px);
 	margin-bottom: 20px;
-	padding-right: 120px;
 }
 
 .art .desc {
@@ -288,6 +291,10 @@ h3 {
 
 .art .desc .kr {
 	line-height: 1.4;
+}
+
+.art .desc .en {
+	font-family: helvetica, sans-serif;
 }
 
 .art figure::-webkit-scrollbar {
@@ -308,7 +315,7 @@ h3 {
 		top: -7px;
 		right: -11px;
 		margin-top: 2px;
-		margin-bottom: -22px;
+		margin-bottom: -12px;
 	}
 }
 
@@ -504,6 +511,7 @@ h3 {
 .talk .kr p {
 	line-height: 1.5;
 }
+
 .ur {
 	text-orientation: upright;
 }
@@ -661,52 +669,106 @@ h3 {
 
 	/* ------------------ 예술 모바일 ------------------ */
 
-	.art {
-		overflow-y: auto;
-		padding-right: 0;
-	}
-
-	.art h2 {
-		right: 0px;
-	}
-
-	.art .capt {
-		position: relative;
-		right: 0;
-		margin-top: 3px;
-		font-size: 12px;
-	}
-
-	.art article {
-		writing-mode: horizontal-tb;
-		margin-left: 20px;
-		border: 3px solid yellow;
-		width: 100%;
-		height: 100%;
-	}
-
 	.art figure {
-		position: relative;
-		width: 100%;
-		height: auto;
-		border: 4px solid blue;
+/*		border: 1px solid red;*/
+		width: 80vw;
+		display: inline-block;
+		white-space: nowrap;
 	}
 
 	.art img {
-		position: relative;
 		width: 100%;
 		height: auto;
-		padding-right: 0px;
+	}
+
+	.ccgg figure {
+		height: 50%;
+	}
+
+	.cgg img {
+		height: 100%;
+	}
+
+	.ccgg .desc{
+		position: absolute;
+		width: 80vw;
+		height: 30%;
+		top: 50%;
+		right: 49px;
+/*		border: 1px solid yellow;*/
+		flex-direction: column;
+	}
+
+	.art .capt .mo {
+			top: -6px;
+			right: -12px;
+			margin-top: 2px;
+			margin-bottom: -16px;
+	}
+/*
+	.art article {
+		writing-mode: horizontal-tb;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		border: 1px solid yellow;
+		padding-right: 60px;
+		overflow-x: hidden;
+	}
+
+	.art header {
+		position: absolute;
+		top: 10px;
+		writing-mode: vertical-rl;
+		border: 1px solid green;
+	}
+
+	.art h2 {
+		font-size: 16px;
+	}
+
+	.art figure {
+		display: inline-block;
+		white-space: nowrap;
+		width: 100%;
+		height: 50svh;
+		border: 3px solid blue;
+	}
+
+	.art img {
+		width: 100%;
+		height: auto;
 	}
 
 	.art .desc {
-		flex-direction: column;
+		top: 10px;
+		left: 0;
+		width: 100%;
+		height: 50svh;
+		writing-mode: vertical-rl;
 		border: 1px solid red;
-	}
+		overflow-x: auto;
+		flex-direction: column;
+		overflow-y: hidden;
+	}*/
 
 	.art .kr {
-		writing-mode: vertical-rl;
-		height: 50%;
+	  	font-family: "Noto Serif KR", serif;
+	  	letter-spacing: 1px;
+	  	margin-left: 16px;
+	}
+
+	.art .mo {
+			position: relative;
+			top: -3px;
+			right: -2px;
+			margin-top: 2px;
+			margin-bottom: -12px;
+		}
+	}
+
+	.art .ur {
+		margin-bottom: 10px;
 	}
 
 	/* ------------------ 웹사이트 모바일 ------------------ */
@@ -744,7 +806,7 @@ h3 {
 	  	letter-spacing: 1px;
 	}
 
-	.ur {
+	.talk .ur {
 		margin-bottom: 16px;
 	}
 	
