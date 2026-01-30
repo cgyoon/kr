@@ -620,7 +620,7 @@ h3 {
 
 	.home section {
 		width: 50vw;
-		height: calc(100svh / 3 );
+		height: 33.33333svh;
 	}
 
 	.home a {
