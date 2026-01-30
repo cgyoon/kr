@@ -298,6 +298,7 @@ h3 {
 	font-size: 16px;
 }
 
+
 .art figure::-webkit-scrollbar {
     width: 1px;
 }
@@ -309,6 +310,11 @@ h3 {
 }
 .art figure::-webkit-scrollbar-button {
     display: none;
+}
+
+.art cite {
+	margin-top: -1px;
+	padding-bottom: 3px;
 }
 
 .art .mo {
@@ -776,6 +782,7 @@ h3 {
 		margin-top: -1px;
 		padding-bottom: 3px;
 	}
+
 	.art .mo {
 		position: relative;
 		top: 0px;
