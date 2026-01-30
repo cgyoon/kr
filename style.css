@@ -681,6 +681,7 @@ h3 {
 		display: inline-block;
 		white-space: nowrap;
 		overflow-y: scroll;
+		pointer-events: none
 	}
 
 	.art img {
