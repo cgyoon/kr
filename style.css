@@ -313,13 +313,10 @@ h3 {
 
 .art .mo {
 	position: relative;
-	top: -7px;
-	right: -11px;
-	margin-top: 2px;
-	margin-bottom: -12px;
-}
-
-.art .ur {
+	top: 0px;
+	right: -13px;
+	margin-top: -5px;
+	margin-bottom: -8px;
 }
 
 .ccgg .capt {
@@ -763,16 +760,30 @@ h3 {
 	.art .kr {
 	  	font-family: "Noto Serif KR", serif;
 	  	letter-spacing: 1px;
+	}
+
+	.art .desc .kr {
 	  	margin-left: 16px;
 	}
 
+	.art cite {
+		margin-top: -1px;
+		padding-bottom: 3px;
+	}
 	.art .mo {
-			position: relative;
-			top: -3px;
-			right: -2px;
-			margin-top: 2px;
-			margin-bottom: -12px;
-		}
+		position: relative;
+		top: 0px;
+		right: -2px;
+		margin-top: 0px;
+		margin-bottom: -10px;
+	}
+
+	.art .capt .mo {
+		position: relative;
+		top: 1px;
+		right: -2px;
+		margin-top: 0px;
+		margin-bottom: -12px;
 	}
 
 	.art .ur {
