@@ -365,6 +365,9 @@ h3 {
 	writing-mode: vertical-rl;
 }
 
+.website .en {
+	writing-mode: horizontal-tb;
+}
 .website .screen {
 	top: 20%;
 	height: 65%;
