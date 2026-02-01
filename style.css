@@ -330,6 +330,70 @@ h3 {
 	align-items: center;
 }
 
+/* ------------------ 디자인 ------------------ */
+
+.design {
+	writing-mode: vertical-rl;
+	overflow-x: hidden;
+}
+
+.graphic,
+.editorial {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0;
+}
+.graphic {
+	top: 0;
+/*	border: 1px solid red;*/
+	overflow-x: auto;
+}
+
+.editorial {
+	top: 50%;
+/*	border: 1px solid blue;*/
+	overflow-x: auto;
+}
+
+.design h2 {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.design section {
+	padding-right: 20px;
+}
+
+.design article {
+/*	border: 1px solid hotpink;*/
+	padding: 10px;
+}
+
+.design figure {
+	display: flex;
+	height: auto;
+/*	border: 1px solid yellow;*/
+	overflow-y: auto;
+}
+
+.design figcaption {
+	position: absolute;
+}
+
+.design img {
+	width: auto;
+	height: 100%;
+}
+
+.design .three img{
+	height: calc(50% - 5px);
+	margin-bottom: 10px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
 /* ------------------ 웹사이트 ------------------ */
 
 .website {
