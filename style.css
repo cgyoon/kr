@@ -394,6 +394,11 @@ h3 {
 .mb10 {
 	margin-bottom: 10px;
 }
+
+.design .en {
+	font-family: helvetica, sans-serif;
+}
+
 /* ------------------ 웹사이트 ------------------ */
 
 .website {
@@ -865,6 +870,17 @@ h3 {
 
 	.art .ur {
 		margin-bottom: 10px;
+	}
+
+	/* ------------------ 디자인 모바일 ------------------ */
+
+	.design .kr {
+	  	font-family: "Noto Serif KR", serif;
+	  	letter-spacing: 1px;
+	}
+
+	.design article {
+		padding: 10px 5px 10px 5px;
 	}
 
 	/* ------------------ 웹사이트 모바일 ------------------ */
