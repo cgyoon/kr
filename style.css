@@ -172,7 +172,7 @@ h3 {
 }
 
 .intro .kr p {
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 .intro .kr {
@@ -196,6 +196,7 @@ h3 {
 
 .intro .kr li {
 	padding: 0 5px 0 5px;
+	line-height: 1.4;
 }
 
 .intro .kr article {
@@ -604,7 +605,7 @@ h3 {
 }
 
 .talk .kr p {
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 .ur {
