@@ -952,6 +952,10 @@ h3 {
 	  	letter-spacing: 1px;
 	}
 
+	.website .kr li {
+		text-underline-offset: 0px;
+	}
+
 	/* ------------------ 대화 모바일 ------------------ */
 
 	.talk .kr p {
