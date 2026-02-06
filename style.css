@@ -495,7 +495,7 @@ h3 {
 .website .kr li {
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
-	text-underline-offset: 3px;
+	text-underline-offset: 1px;
 }
 
 .website .screen ul {
@@ -669,6 +669,8 @@ h3 {
 	font-size: 12px;
 	text-orientation: upright;
 	writing-mode: vertical-rl;
+/*	border: 1px solid red;*/
+	margin-right: 10px;
 }
 
 .writing .en {
@@ -977,6 +979,14 @@ h3 {
 	.writing .dot {
 		margin: 0 0;
 	}
+
+	.atc .mo {
+		margin-bottom: -4px;
+	}
+
+	.atc h1 .mo {
+	}
+
 }
 
 
