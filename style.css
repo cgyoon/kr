@@ -31,6 +31,30 @@ h3 {
 .tu {
 	text-orientation: upright;
 }
+
+.ro {
+	position: absolute;
+	transform: rotate(90deg);
+	margin-right: -4px;
+}
+
+.mo {
+	position: relative;
+	top: -12px;
+	right: -4px;
+	margin-top: 12px;
+	margin-bottom: -20px;
+}
+
+.up {
+	text-orientation: upright;
+}
+
+.mt {
+	margin-top: 8px;
+}
+
+
 /* ------------------ 홈 ------------------ */
 
 .home {
@@ -113,18 +137,6 @@ h3 {
 
 .blue a {
 	color: black;
-}
-
-.mo {
-	position: relative;
-	top: -12px;
-	right: -4px;
-	margin-top: 12px;
-	margin-bottom: -20px;
-}
-
-.up {
-	text-orientation: upright;
 }
 
 /* ------------------ 소개 ------------------ */
@@ -759,11 +771,11 @@ h3 {
 		top: 0;
 		left: 40%;
 		width: 60%;
-	  font-family: "Noto Serif KR", serif;
-	  font-weight: 400;
-	  font-style: normal;
-	  font-size: 22px;
-	  letter-spacing: 1px;
+	  	font-family: "Noto Serif KR", serif;
+	 	 font-weight: 400;
+	  	font-style: normal;
+	  	font-size: 22px;
+	  	letter-spacing: 1px;
 	}
 
 	.intro .kr .text {
@@ -772,7 +784,7 @@ h3 {
 	}
 
 	.intro .kr p {
-	   line-height: 1.45;
+	   line-height: 1.4;
 	}
 
 	.intro .kr article {
@@ -784,7 +796,7 @@ h3 {
 	}
 
 	.intro .kr li {
-		padding: 0 2px 0 2px;
+/*		padding: 0 2px 0 2px;*/
 	}
 
 	.intro .en {
