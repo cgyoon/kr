@@ -591,23 +591,50 @@ h3 {
 	padding-right: 6px;
 }
 
+.talk header {
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	margin-left: 32px;
+}
+
+.talk .en .info {
+	font-size: 12px;
+	display: block;
+}
+
+.talk .info {
+	display: flex;
+/*	border: 1px solid blue;*/
+	margin-top: 2px;
+}
+
+.talk .kr .date {
+	font-size: 14px;
+	padding-right: 2px;
+}
+
+.talk .kr h2 {
+	font-size: 32px;
+}
+
+
+.talk .kr .info p:nth-child(1) {
+	margin-bottom: 8px;
+}
+
 .talk .kr {
 	height: 75%;
 	font-size: 32px;
 	padding-bottom: 16px;
 }
 
-.talk .kr h2 {
-	margin-top: 32px;
-	margin-left: 16px;
-}
-
-.talk .kr p {
-	text-indent: 28px;
-}
-
 .talk .kr cite {
 	margin-bottom: 6px;
+}
+
+.talk .kr .text p {
+	text-indent: 32px;
 }
 
 .talk .en {
@@ -615,8 +642,12 @@ h3 {
 	font-family: helvetica, sans-serif;
 }
 
-.talk .en h2 {
+.talk .en header {
 	margin-left: 28px;
+}
+
+.talk .en .text p {
+	text-indent: 16px;
 }
 
 .talk .kr p {
@@ -626,6 +657,12 @@ h3 {
 .ur {
 	text-orientation: upright;
 }
+
+.jeom {
+	margin: -4px -4px;
+}
+
+
 
 /* ------------------ 글 ------------------ */
 
