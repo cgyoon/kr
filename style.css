@@ -760,15 +760,23 @@ h3 {
 
 .atc section p {
 	line-height: 1.4;
-	text-indent: 32px;
+	text-indent: 52px;
 }
 
+/*.atc .ml {
+	margin-left: 32px;
+}
+*/
 .atc p .qm {
 	margin-bottom: 16px;
 }
 
 @media screen and (max-width: 900px) {
 
+	.jeom {
+		color: red;
+/*		margin: 0px 6px;*/
+	}
 	/* ------------------ 홈 모바일 ------------------ */
 
 	.home {
